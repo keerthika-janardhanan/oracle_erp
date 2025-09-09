@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Report - TC_API_SUPPLIER_01_20250821071531</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f8f9fa; margin: 20px; }
+    h1 { color: #2c3e50; }
+    h2 { color: #34495e; }
+    table { width: 100%; border-collapse: collapse; background: #fff; }
+    th, td { border: 1px solid #ccc; padding: 10px; text-align: left; vertical-align: top; }
+    th { background: #34495e; color: #ecf0f1; }
+    tr.success { background: #e8f8f5; }
+    tr.error { background: #fdecea; }
+    pre { margin: 0; white-space: pre-wrap; word-wrap: break-word; max-height: 400px; overflow: auto; }
+    .expand-btn {
+      margin-top: 6px;
+      padding: 4px 10px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .expand-btn:hover {
+      background-color: #2980b9;
+    }
+    .hidden { display: none; }
+  </style>
+  <script>
+    function toggleExpand(id, btn) {
+      const section = document.getElementById(id);
+      if (section.style.display === 'none') {
+        section.style.display = 'block';
+        btn.textContent = 'Show less';
+      } else {
+        section.style.display = 'none';
+        btn.textContent = 'Show more';
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Test Report - TC_API_SUPPLIER_01</h1>
+  <h2>Description: </h2>
+  <h3>Execution Time: 21/8/2025, 12:45:39 pm</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Step Description</th>
+        <th>Status</th>
+        <th>Message</th>
+        <th>Parameters</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="success">
+          <td>Step 1</td>
+          <td>✅ PASS</td>
+          <td><pre>Loaded full supplier payload</pre></td>
+          <td>
+            
+                  <pre>{}</pre>
+                  
+                
+          </td>
+        </tr>
+        <tr class="success">
+          <td>Step 2</td>
+          <td>✅ PASS</td>
+          <td><pre>Fetched API config</pre></td>
+          <td>
+            
+                  <pre>{
+  "URL": "https://ecqg-test.fa.us2.oraclecloud.com/fscmRestApi/resources/11.13.18.05",
+  "USERNAME": "arjun.gurunathan@cognizant.com"
+}</pre>
+                  
+                
+          </td>
+        </tr>
+        <tr class="success">
+          <td>Step 3 - Create Supplier</td>
+          <td>✅ PASS</td>
+          <td><pre>Posted to Step 3 - Create Supplier successfully</pre></td>
+          <td>
+            
+                  <pre>{
+  "SupplierId": 300000017716352,
+  "SupplierPartyId": 300000017716353,
+  "Supplier": "TEST_Sup_014",
+  "SupplierNumber": "10127"
+}</pre>
+                  <button class="expand-btn" onclick="toggleExpand('expand-2', this)">Show more</button>
+                         <pre id="expand-2" class="hidden">{
+  "AlternateName": null,
+  "TaxOrganizationTypeCode": "CORPORATION",
+  "TaxOrganizationType": "Corporation",
+  "SupplierTypeCode": "SUPPLIER",
+  "SupplierType": "Supplier",
+  "InactiveDate": null,
+  "Status": "ACTIVE",
+  "BusinessRelationshipCode": "SPEND_AUTHORIZED",
+  "BusinessRelationship": "Spend Authorized",
+  "ParentSupplierId": null,
+  "ParentSupplier": null,
+  "ParentSupplierNumber": null,
+  "CreationDate": "2025-08-21T07:15:32.001+00:00",
+  "CreatedBy": "arjun.gurunathan@cognizant.com",
+  "LastUpdateDate": "2025-08-21T07:15:32.533+00:00",
+  "LastUpdatedBy": "arjun.gurunathan@cognizant.com",
+  "CreationSourceCode": "WEB_SERVICE",
+  "CreationSource": "Web Service",
+  "DataFoxScore": null,
+  "DataFoxScoringCriteria": null,
+  "Alias": null,
+  "DUNSNumber": "507520955",
+  "OneTimeSupplierFlag": false,
+  "RegistryId": "67102",
+  "CustomerNumber": null,
+  "StandardIndustryClass": null,
+  "IndustryCategory": null,
+  "IndustrySubcategory": null,
+  "NationalInsuranceNumber": null,
+  "NationalInsuranceNumberExistsFlag": false,
+  "CorporateWebsite": null,
+  "YearEstablished": null,
+  "MissionStatement": null,
+  "YearIncorporated": null,
+  "ChiefExecutiveTitle": null,
+  "ChiefExecutiveName": null,
+  "PrincipalTitle": null,
+  "PrincipalName": null,
+  "FiscalYearEndMonthCode": null,
+  "FiscalYearEndMonth": null,
+  "CurrentFiscalYearPotentialRevenue": null,
+  "PreferredFunctionalCurrencyCode": null,
+  "PreferredFunctionalCurrency": null,
+  "TaxRegistrationCountryCode": null,
+  "TaxRegistrationCountry": null,
+  "TaxRegistrationNumber": null,
+  "TaxpayerCountryCode": null,
+  "TaxpayerCountry": null,
+  "TaxpayerId": null,
+  "TaxpayerIdExistsFlag": false,
+  "FederalReportableFlag": false,
+  "FederalIncomeTaxTypeCode": null,
+  "FederalIncomeTaxType": null,
+  "StateReportableFlag": false,
+  "TaxReportingName": null,
+  "NameControl": null,
+  "VerificationDate": null,
+  "UseWithholdingTaxFlag": false,
+  "WithholdingTaxGroupId": null,
+  "WithholdingTaxGroup": null,
+  "BusinessClassificationNotApplicableFlag": false,
+  "DataFoxId": null,
+  "DataFoxCompanyName": null,
+  "DataFoxLegalName": null,
+  "DataFoxCompanyPrimaryURL": null,
+  "DataFoxNAICSCode": null,
+  "DataFoxCountry": null,
+  "DataFoxEIN": null,
+  "DataFoxLastSyncDate": null,
+  "OBNEnabledFlag": null,
+  "OnOFACListFlag": null,
+  "OFACSources": null,
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352",
+      "name": "suppliers",
+      "kind": "item",
+      "properties": {
+        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000007770400000007737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000017371007E0002000000017372001B6F7261636C652E6A626F2E646F6D61696E2E4E756C6C56616C75655899C1C58DAABEEB02000149000A6D53514C54797065496478700000000C7371007E00020000000171007E00077371007E00020000000171007E000778"
+      }
+    },
+    {
+      "rel": "canonical",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352",
+      "name": "suppliers",
+      "kind": "item"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/lov/CountryLookup",
+      "name": "CountryLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/lov/FiscalYearEndMonthLookup",
+      "name": "FiscalYearEndMonthLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/lov/ParentSupplierLookup",
+      "name": "ParentSupplierLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/lov/CurrencyLookup",
+      "name": "CurrencyLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/lov/BusinessRelationshipLookup",
+      "name": "BusinessRelationshipLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/lov/TaxOrganizationTypeLookup",
+      "name": "TaxOrganizationTypeLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/lov/SupplierTypeLookup",
+      "name": "SupplierTypeLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/lov/FederalIncomeTaxTypeLookup",
+      "name": "FederalIncomeTaxTypeLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/lov/WithholdingTaxGroupLookup",
+      "name": "WithholdingTaxGroupLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "child",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/DFF",
+      "name": "DFF",
+      "kind": "collection"
+    },
+    {
+      "rel": "child",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/addresses",
+      "name": "addresses",
+      "kind": "collection"
+    },
+    {
+      "rel": "child",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/attachments",
+      "name": "attachments",
+      "kind": "collection"
+    },
+    {
+      "rel": "child",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/businessClassifications",
+      "name": "businessClassifications",
+      "kind": "collection"
+    },
+    {
+      "rel": "child",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/contacts",
+      "name": "contacts",
+      "kind": "collection"
+    },
+    {
+      "rel": "child",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/globalDFF",
+      "name": "globalDFF",
+      "kind": "collection"
+    },
+    {
+      "rel": "child",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/productsAndServices",
+      "name": "productsAndServices",
+      "kind": "collection"
+    },
+    {
+      "rel": "child",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites",
+      "name": "sites",
+      "kind": "collection"
+    },
+    {
+      "rel": "action",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/action/scores",
+      "name": "scores",
+      "kind": "other"
+    },
+    {
+      "rel": "action",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/action/signals",
+      "name": "signals",
+      "kind": "other"
+    },
+    {
+      "rel": "action",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/action/submitSpendAuthorizationRequest",
+      "name": "submitSpendAuthorizationRequest",
+      "kind": "other"
+    }
+  ]
+}</pre>
+                
+          </td>
+        </tr>
+        <tr class="success">
+          <td>Step 4 - Add Address</td>
+          <td>✅ PASS</td>
+          <td><pre>Posted to Step 4 - Add Address successfully</pre></td>
+          <td>
+            
+                  <pre>{
+  "SupplierAddressId": 300000017720095,
+  "AddressName": "Street138",
+  "CountryCode": "US",
+  "Country": "United States"
+}</pre>
+                  <button class="expand-btn" onclick="toggleExpand('expand-3', this)">Show more</button>
+                         <pre id="expand-3" class="hidden">{
+  "AddressLine1": "Example2 Road",
+  "AddressLine2": null,
+  "AddressLine3": null,
+  "AddressLine4": null,
+  "City": "Redwood City",
+  "State": "CA",
+  "PostalCode": "94065",
+  "PostalCodeExtension": null,
+  "Province": null,
+  "County": null,
+  "Building": null,
+  "FloorNumber": null,
+  "PhoneticAddress": null,
+  "LanguageCode": null,
+  "Language": null,
+  "Addressee": null,
+  "GlobalLocationNumber": null,
+  "AdditionalAddressAttribute1": null,
+  "AdditionalAddressAttribute2": null,
+  "AdditionalAddressAttribute3": null,
+  "AdditionalAddressAttribute4": null,
+  "AdditionalAddressAttribute5": null,
+  "FormattedAddress": "Example2 Road,REDWOOD CITY, CA 94065",
+  "AddressPurposeOrderingFlag": true,
+  "AddressPurposeRemitToFlag": true,
+  "AddressPurposeRFQOrBiddingFlag": false,
+  "PhoneCountryCode": null,
+  "PhoneAreaCode": null,
+  "PhoneNumber": null,
+  "PhoneExtension": null,
+  "FaxCountryCode": null,
+  "FaxAreaCode": null,
+  "FaxNumber": null,
+  "Email": null,
+  "InactiveDate": "4712-12-31",
+  "Status": "ACTIVE",
+  "CreationDate": "2025-08-21T07:15:34+00:00",
+  "CreatedBy": "arjun.gurunathan@cognizant.com",
+  "LastUpdateDate": "2025-08-21T07:15:35.019+00:00",
+  "LastUpdatedBy": "arjun.gurunathan@cognizant.com",
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/addresses/300000017720095",
+      "name": "addresses",
+      "kind": "item",
+      "properties": {
+        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000008770400000008737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000017371007E0002000000017371007E0002000000017371007E0002000000017372001B6F7261636C652E6A626F2E646F6D61696E2E4E756C6C56616C75655899C1C58DAABEEB02000149000A6D53514C54797065496478700000000C71007E000971007E000971007E000978"
+      }
+    },
+    {
+      "rel": "canonical",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/addresses/300000017720095",
+      "name": "addresses",
+      "kind": "item"
+    },
+    {
+      "rel": "parent",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352",
+      "name": "suppliers",
+      "kind": "item"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/addresses/300000017720095/lov/CountryLookup",
+      "name": "CountryLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/addresses/300000017720095/lov/LanguageLookup",
+      "name": "LanguageLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "child",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/addresses/300000017720095/child/DFF",
+      "name": "DFF",
+      "kind": "collection"
+    }
+  ]
+}</pre>
+                
+          </td>
+        </tr>
+        <tr class="success">
+          <td>Step 5 - Add Site</td>
+          <td>✅ PASS</td>
+          <td><pre>Posted to Step 5 - Add Site successfully</pre></td>
+          <td>
+            
+                  <pre>{
+  "SupplierSiteId": 300000017716358,
+  "SupplierSite": "REST2",
+  "ProcurementBUId": 300000002132036,
+  "ProcurementBU": "FU01 US BU01"
+}</pre>
+                  <button class="expand-btn" onclick="toggleExpand('expand-4', this)">Show more</button>
+                         <pre id="expand-4" class="hidden">{
+  "SupplierAddressId": 300000017720095,
+  "SupplierAddressName": "Street138",
+  "InactiveDate": null,
+  "Status": "ACTIVE",
+  "SitePurposeSourcingOnlyFlag": false,
+  "SitePurposePurchasingFlag": true,
+  "SitePurposeProcurementCardFlag": false,
+  "SitePurposePayFlag": true,
+  "SitePurposePrimaryPayFlag": false,
+  "IncomeTaxReportingSiteFlag": false,
+  "AlternateSiteName": null,
+  "CustomerNumber": null,
+  "B2BCommunicationMethodCode": "NONE",
+  "B2BCommunicationMethod": "No",
+  "B2BSupplierSiteCode": null,
+  "CommunicationMethodCode": "EMAIL",
+  "CommunicationMethod": "E-Mail",
+  "Email": "aaTest@oracle.com",
+  "FaxCountryCode": null,
+  "FaxAreaCode": null,
+  "FaxNumber": null,
+  "HoldAllNewPurchasingDocumentsFlag": false,
+  "PurchasingHoldReason": null,
+  "AllNewPurchasingDocumentsHoldDate": null,
+  "AllNewPurchasingDocumentsHoldBy": null,
+  "RequiredAcknowledgmentCode": null,
+  "RequiredAcknowledgment": null,
+  "AcknowledgmentWithinDays": null,
+  "CarrierId": null,
+  "Carrier": null,
+  "ModeOfTransportCode": null,
+  "ModeOfTransport": null,
+  "ServiceLevelCode": null,
+  "ServiceLevel": null,
+  "FreightTermsCode": null,
+  "FreightTerms": null,
+  "PayOnReceiptFlag": false,
+  "FOBCode": null,
+  "FOB": null,
+  "CountryOfOriginCode": null,
+  "CountryOfOrigin": null,
+  "BuyerManagedTransportationCode": null,
+  "BuyerManagedTransportation": null,
+  "PayOnUseFlag": false,
+  "AgingOnsetPointCode": null,
+  "AgingOnsetPoint": null,
+  "AgingPeriodDays": null,
+  "ConsumptionAdviceFrequencyCode": null,
+  "ConsumptionAdviceFrequency": null,
+  "ConsumptionAdviceSummaryCode": null,
+  "ConsumptionAdviceSummary": null,
+  "AlternatePaySiteId": null,
+  "AlternatePaySite": null,
+  "InvoiceSummaryLevelCode": null,
+  "InvoiceSummaryLevel": null,
+  "GaplessInvoiceNumberingFlag": false,
+  "SellingCompanyIdentifier": null,
+  "CreateDebitMemoFromReturnFlag": false,
+  "ShipToExceptionCode": null,
+  "ShipToException": null,
+  "ReceiptRoutingId": null,
+  "ReceiptRouting": null,
+  "OverReceiptTolerance": null,
+  "OverReceiptActionCode": null,
+  "OverReceiptAction": null,
+  "EarlyReceiptToleranceInDays": null,
+  "LateReceiptToleranceInDays": null,
+  "AllowSubstituteReceiptsCode": null,
+  "AllowSubstituteReceipts": null,
+  "AllowUnorderedReceiptsFlag": false,
+  "ReceiptDateExceptionCode": null,
+  "ReceiptDateException": null,
+  "InvoiceCurrencyCode": null,
+  "InvoiceCurrency": null,
+  "InvoiceAmountLimit": null,
+  "InvoiceMatchOptionCode": null,
+  "InvoiceMatchOption": null,
+  "MatchApprovalLevelCode": null,
+  "MatchApprovalLevel": null,
+  "QuantityTolerancesId": null,
+  "QuantityTolerances": null,
+  "AmountTolerancesId": null,
+  "AmountTolerances": null,
+  "InvoiceChannelCode": null,
+  "InvoiceChannel": null,
+  "PaymentCurrencyCode": null,
+  "PaymentCurrency": null,
+  "PaymentPriority": null,
+  "PayGroupCode": null,
+  "PayGroup": null,
+  "HoldAllInvoicesFlag": false,
+  "HoldUnmatchedInvoicesCode": "D",
+  "HoldUnmatchedInvoices": "Default from Payables Options",
+  "HoldUnvalidatedInvoicesFlag": false,
+  "PaymentHoldDate": null,
+  "PaymentHoldReason": null,
+  "PaymentTermsId": null,
+  "PaymentTerms": null,
+  "PaymentTermsDateBasisCode": null,
+  "PaymentTermsDateBasis": null,
+  "PayDateBasisCode": null,
+  "PayDateBasis": null,
+  "BankChargeDeductionTypeCode": "D",
+  "BankChargeDeductionType": "Default from Payables Options",
+  "AlwaysTakeDiscountCode": "D",
+  "AlwaysTakeDiscount": "Default from Payables Options",
+  "ExcludeFreightFromDiscountCode": "D",
+  "ExcludeFreightFromDiscount": "Default from Payables Options",
+  "ExcludeTaxFromDiscountCode": "D",
+  "ExcludeTaxFromDiscount": "Default from Payables Options",
+  "CreateInterestInvoicesCode": "D",
+  "CreateInterestInvoices": "Default from Payables Options",
+  "CreationDate": "2025-08-21T07:15:36.001+00:00",
+  "CreatedBy": "arjun.gurunathan@cognizant.com",
+  "LastUpdateDate": "2025-08-21T07:15:36.193+00:00",
+  "LastUpdatedBy": "arjun.gurunathan@cognizant.com",
+  "OverrideB2BCommunicationforSpecialHandlingOrdersFlag": false,
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358",
+      "name": "sites",
+      "kind": "item",
+      "properties": {
+        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+      }
+    },
+    {
+      "rel": "canonical",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358",
+      "name": "sites",
+      "kind": "item"
+    },
+    {
+      "rel": "parent",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352",
+      "name": "suppliers",
+      "kind": "item"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/InvoiceSummaryLevelLookup",
+      "name": "InvoiceSummaryLevelLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/MatchApprovalLevelLookup",
+      "name": "MatchApprovalLevelLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/CommunicationMethodLookup",
+      "name": "CommunicationMethodLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/ConsumptionAdviceSummaryLookup",
+      "name": "ConsumptionAdviceSummaryLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/ProcurementBULookup",
+      "name": "ProcurementBULookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/ServiceLevelLookup",
+      "name": "ServiceLevelLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/ReceivingOptionLookup",
+      "name": "ReceivingOptionLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/QuantityTolerancesLookup",
+      "name": "QuantityTolerancesLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/HoldUnmatchedInvoicesLookup",
+      "name": "HoldUnmatchedInvoicesLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/BuyerManagedTransportationLookup",
+      "name": "BuyerManagedTransportationLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/InvoiceCurrencyLookup",
+      "name": "InvoiceCurrencyLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/ModeOfTransportLookup",
+      "name": "ModeOfTransportLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/PayDateBasisLookup",
+      "name": "PayDateBasisLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/RequiredAcknowledgmentLookup",
+      "name": "RequiredAcknowledgmentLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/B2BCommunicationMethodLookup",
+      "name": "B2BCommunicationMethodLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/AlternatePaySiteLookup",
+      "name": "AlternatePaySiteLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/CarrierLookup",
+      "name": "CarrierLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/CountryOfOriginLookup",
+      "name": "CountryOfOriginLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/FreightTermsLookup",
+      "name": "FreightTermsLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/YesNoLookup",
+      "name": "YesNoLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/InvoiceChannelLookup",
+      "name": "InvoiceChannelLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/PayGroupLookup",
+      "name": "PayGroupLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/SupplierAddressNameLookup",
+      "name": "SupplierAddressNameLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/AmountTolerancesLookup",
+      "name": "AmountTolerancesLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/PaymentTermsLookup",
+      "name": "PaymentTermsLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/AgingOnsetPointLookup",
+      "name": "AgingOnsetPointLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/PaymentTermsDateBasisLookup",
+      "name": "PaymentTermsDateBasisLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/BankChargeDeductionTypeLookup",
+      "name": "BankChargeDeductionTypeLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/ConsumptionAdviceFrequencyLookup",
+      "name": "ConsumptionAdviceFrequencyLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/ReceiptRoutingLookup",
+      "name": "ReceiptRoutingLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/InvoiceMatchOptionLookup",
+      "name": "InvoiceMatchOptionLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/FOBLookup",
+      "name": "FOBLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/lov/FaxCountryCodeLookup",
+      "name": "FaxCountryCodeLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "child",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/child/DFF",
+      "name": "DFF",
+      "kind": "collection"
+    },
+    {
+      "rel": "child",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/child/assignments",
+      "name": "assignments",
+      "kind": "collection"
+    },
+    {
+      "rel": "child",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/child/attachments",
+      "name": "attachments",
+      "kind": "collection"
+    },
+    {
+      "rel": "child",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/child/globalDFF",
+      "name": "globalDFF",
+      "kind": "collection"
+    },
+    {
+      "rel": "child",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/child/thirdPartyPaymentRelationships",
+      "name": "thirdPartyPaymentRelationships",
+      "kind": "collection"
+    }
+  ]
+}</pre>
+                
+          </td>
+        </tr>
+        <tr class="success">
+          <td>Step 6 - Add Contact</td>
+          <td>✅ PASS</td>
+          <td><pre>Posted to Step 6 - Add Contact successfully</pre></td>
+          <td>
+            
+                  <pre>{
+  "SupplierContactId": 300000017720102,
+  "SalutationCode": "MR.",
+  "Salutation": "Mr.",
+  "FirstName": "Jake"
+}</pre>
+                  <button class="expand-btn" onclick="toggleExpand('expand-5', this)">Show more</button>
+                         <pre id="expand-5" class="hidden">{
+  "MiddleName": null,
+  "LastName": "Carls14",
+  "JobTitle": null,
+  "AdministrativeContactFlag": true,
+  "PhoneCountryCode": null,
+  "PhoneAreaCode": null,
+  "PhoneNumber": null,
+  "PhoneExtension": null,
+  "MobileCountryCode": "1",
+  "MobileAreaCode": "650",
+  "MobileNumber": "555-2234",
+  "FaxCountryCode": null,
+  "FaxAreaCode": null,
+  "FaxNumber": null,
+  "Email": "aaTest@oracle.com",
+  "Status": "ACTIVE",
+  "InactiveDate": null,
+  "PersonProfileId": 300000017720102,
+  "CreationDate": "2025-08-21T07:15:37+00:00",
+  "CreatedBy": "arjun.gurunathan@cognizant.com",
+  "LastUpdateDate": "2025-08-21T07:15:37.590+00:00",
+  "LastUpdatedBy": "arjun.gurunathan@cognizant.com",
+  "DataAccessLevel": null,
+  "UserName": null,
+  "UserAccountStatus": null,
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/contacts/300000017720102",
+      "name": "contacts",
+      "kind": "item",
+      "properties": {
+        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A6578700000000A77040000000A737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000027371007E0002000000027371007E0002000000017371007E0002000000017371007E0002000000017371007E0002000000017372001B6F7261636C652E6A626F2E646F6D61696E2E4E756C6C56616C75655899C1C58DAABEEB02000149000A6D53514C54797065496478700000000C7371007E00020000000171007E000B7371007E00020000000178"
+      }
+    },
+    {
+      "rel": "canonical",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/contacts/300000017720102",
+      "name": "contacts",
+      "kind": "item"
+    },
+    {
+      "rel": "parent",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352",
+      "name": "suppliers",
+      "kind": "item"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/contacts/300000017720102/lov/SalutationLookup",
+      "name": "SalutationLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "child",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/contacts/300000017720102/child/DFF",
+      "name": "DFF",
+      "kind": "collection"
+    },
+    {
+      "rel": "child",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/contacts/300000017720102/child/addresses",
+      "name": "addresses",
+      "kind": "collection"
+    }
+  ]
+}</pre>
+                
+          </td>
+        </tr>
+        <tr class="success">
+          <td>Step 7 - Add Contact Address</td>
+          <td>✅ PASS</td>
+          <td><pre>Posted to Step 7 - Add Contact Address successfully</pre></td>
+          <td>
+            
+                  <pre>{
+  "SupplierContactAddressId": 300000017716360,
+  "SupplierAddressId": 300000017720095,
+  "AddressName": "Street138",
+  "CreationDate": "2025-08-21T07:15:39+00:00"
+}</pre>
+                  <button class="expand-btn" onclick="toggleExpand('expand-6', this)">Show more</button>
+                         <pre id="expand-6" class="hidden">{
+  "CreatedBy": "arjun.gurunathan@cognizant.com",
+  "LastUpdateDate": "2025-08-21T07:15:39.029+00:00",
+  "LastUpdatedBy": "arjun.gurunathan@cognizant.com",
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/contacts/300000017720102/child/addresses/300000017716360",
+      "name": "addresses",
+      "kind": "item",
+      "properties": {
+        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+      }
+    },
+    {
+      "rel": "canonical",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/contacts/300000017720102/child/addresses/300000017716360",
+      "name": "addresses",
+      "kind": "item"
+    },
+    {
+      "rel": "parent",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/contacts/300000017720102",
+      "name": "contacts",
+      "kind": "item"
+    }
+  ]
+}</pre>
+                
+          </td>
+        </tr>
+        <tr class="success">
+          <td>Step 8 - Add Site Assignment</td>
+          <td>✅ PASS</td>
+          <td><pre>Posted to Step 8 - Add Site Assignment successfully</pre></td>
+          <td>
+            
+                  <pre>{
+  "AssignmentId": 300000017720115,
+  "ClientBUId": 300000002132036,
+  "ClientBU": "FU01 US BU01",
+  "BillToBUId": 300000002132036
+}</pre>
+                  <button class="expand-btn" onclick="toggleExpand('expand-7', this)">Show more</button>
+                         <pre id="expand-7" class="hidden">{
+  "BillToBU": "FU01 US BU01",
+  "ShipToLocationId": null,
+  "ShipToLocation": null,
+  "ShipToLocationCode": null,
+  "BillToLocationId": null,
+  "BillToLocation": null,
+  "BillToLocationCode": null,
+  "UseWithholdingTaxFlag": false,
+  "WithholdingTaxGroupId": null,
+  "WithholdingTaxGroup": null,
+  "ChartOfAccountsId": 2001,
+  "LiabilityDistributionId": null,
+  "LiabilityDistribution": null,
+  "PrepaymentDistributionId": null,
+  "PrepaymentDistribution": null,
+  "BillPayableDistributionId": null,
+  "BillPayableDistribution": null,
+  "DistributionSetId": null,
+  "DistributionSet": null,
+  "InactiveDate": "4712-12-31",
+  "Status": "ACTIVE",
+  "CreationDate": "2025-08-21T07:15:40.001+00:00",
+  "CreatedBy": "arjun.gurunathan@cognizant.com",
+  "LastUpdateDate": "2025-08-21T07:15:40.080+00:00",
+  "LastUpdatedBy": "arjun.gurunathan@cognizant.com",
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/child/assignments/300000017720115",
+      "name": "assignments",
+      "kind": "item",
+      "properties": {
+        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+      }
+    },
+    {
+      "rel": "canonical",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/child/assignments/300000017720115",
+      "name": "assignments",
+      "kind": "item"
+    },
+    {
+      "rel": "parent",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358",
+      "name": "sites",
+      "kind": "item"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/child/assignments/300000017720115/lov/DistributionSetLookup",
+      "name": "DistributionSetLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/child/assignments/300000017720115/lov/ShipToLocationLookup",
+      "name": "ShipToLocationLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/child/assignments/300000017720115/lov/ClientBuSiteAssignmentLookup",
+      "name": "ClientBuSiteAssignmentLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/child/assignments/300000017720115/lov/BillToBuSiteAssignmentLookup",
+      "name": "BillToBuSiteAssignmentLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/child/assignments/300000017720115/lov/WithholdingTaxGroupLookup",
+      "name": "WithholdingTaxGroupLookup",
+      "kind": "collection"
+    },
+    {
+      "rel": "lov",
+      "href": "https://ecqg-test.fa.us2.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/suppliers/300000017716352/child/sites/300000017716358/child/assignments/300000017720115/lov/BillToLocationLookup",
+      "name": "BillToLocationLookup",
+      "kind": "collection"
+    }
+  ]
+}</pre>
+                
+          </td>
+        </tr>
+    </tbody>
+  </table>
+</body>
+</html>
