@@ -1,0 +1,944 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic:
+    - link "Skip to main content" [ref=e2] [cursor=pointer]:
+      - /url: "#"
+    - generic [ref=e7]:
+      - generic [ref=e12]:
+        - link "Navigator" [ref=e15] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e16]
+        - link "Oracle Logo Home" [ref=e25] [cursor=pointer]:
+          - /url: "#"
+        - generic [ref=e26]:
+          - link "Search" [ref=e29] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e30]
+          - link "Home" [ref=e41] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e42]
+          - link "Favorites and Recent Items" [ref=e53] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e54]
+          - link "Watchlist" [ref=e65] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e66]
+          - link "Notifications (0 unread)" [ref=e78] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e79]
+          - link "Access Accessibility Settings":
+            - /url: "#"
+        - link "Settings and Actions" [ref=e96] [cursor=pointer]:
+          - /url: "#"
+          - img "Settings and Actions" [ref=e100]
+      - generic [ref=e136]:
+        - generic [ref=e149]:
+          - generic [ref=e154]:
+            - generic "Create Invoice:" [ref=e155]:
+              - heading "Create Invoice:" [level=1] [ref=e156]
+            - link "Help" [ref=e157] [cursor=pointer]:
+              - /url: "#"
+              - img "Help" [ref=e158]
+          - generic [ref=e176]:
+            - generic [ref=e179]:
+              - button "About This Record" [ref=e180]:
+                - img "About This Record" [ref=e181]
+              - generic: About This Record
+              - menubar [ref=e182]:
+                - menuitem "Invoice Actions" [ref=e183]:
+                  - link "Invoice Actions" [ref=e184]:
+                    - /url: "#"
+            - generic [ref=e186]:
+              - button "Save and Create Next" [ref=e187]:
+                - generic [ref=e188]: Save and Create Next
+              - button "Save" [ref=e189]:
+                - generic [ref=e190]: Save
+              - button "Save and Close" [active] [ref=e191]:
+                - generic [ref=e192]: Save and Close
+              - button "Cancel" [ref=e193]:
+                - generic [ref=e194]: Cancel
+        - generic [ref=e210]:
+          - generic [ref=e211]:
+            - generic [ref=e212]:
+              - button "Collapse Invoice Header" [expanded] [ref=e213]
+              - generic "Invoice Header" [ref=e214]:
+                - heading "Invoice Header" [level=1] [ref=e215]
+              - link "Show More" [ref=e216] [cursor=pointer]:
+                - /url: "#"
+            - generic [ref=e225]:
+              - text: Identifying PO
+              - combobox "Identifying PO" [ref=e226]
+              - 'link "Search: Identifying PO" [ref=e227] [cursor=pointer]':
+                - /url: "#"
+              - generic: Tab to the associated search button or type a value. Autocompletes on TAB
+              - text: Business Unit
+              - generic [ref=e228]:
+                - combobox "Business Unit" [disabled] [ref=e229]: FU01 US BU01
+                - 'generic "Search: Business Unit" [ref=e232]'
+                - generic: Autocompletes on TAB
+              - generic [ref=e233]: "*"
+              - text: Supplier
+              - combobox "Supplier" [ref=e234]: TEST_Sup_003
+              - 'link "Search: Supplier" [ref=e235] [cursor=pointer]':
+                - /url: "#"
+              - generic: Tab to the associated search button or type a value. Autocompletes on TAB
+              - text: Supplier Number Supplier__003
+              - generic [ref=e236]: "*"
+              - text: Supplier Site
+              - generic [ref=e237]:
+                - combobox "Supplier Site" [ref=e238]: REST2
+                - 'generic "Search: Supplier Site" [ref=e241]'
+                - generic: Autocompletes on TAB
+              - generic [ref=e242]: "*"
+              - text: Legal Entity
+              - generic [ref=e243]:
+                - combobox "Legal Entity" [ref=e244]: FU01 US LE01
+                - 'generic "Search: Legal Entity" [ref=e247]'
+                - generic: Autocompletes on TAB
+              - text: Invoice Group
+              - textbox "Invoice Group" [ref=e248]
+              - text: "*Number"
+              - textbox "Number" [ref=e249]: CM-SHEZ2147b
+              - text: "*Amount"
+              - generic [ref=e250]:
+                - combobox "Invoice Currency" [ref=e251]:
+                  - option
+                  - option "USD - US Dollar" [selected]
+                  - option "EUR - Euro"
+                  - option "GBP - Pound Sterling"
+                  - option "JPY - Yen"
+                  - option "ADP - Andorran Peseta"
+                  - option "AED - UAE Dirham"
+                  - option "AFA - Afghani (old)"
+                  - option "AFN - Afghani"
+                  - option "ALL - Lek"
+                  - option "AMD - Armenian Dram"
+                  - option "ANG - Netherlands Antillian Guilder"
+                  - option "AOA - Kwanza"
+                  - option "AOK - Kwanza (Obsolete)"
+                  - option "AON - New Kwanza"
+                  - option "ARA - Austral"
+                  - option "ARS - Argentine Peso"
+                  - option "ATS - Schilling"
+                  - option "AUD - Australian Dollar"
+                  - option "AWG - Aruban Guilder"
+                  - option "AZM - Azerbaijanian Manat (old)"
+                  - option "AZN - Azerbaijanian Manat"
+                  - option "BAM - Convertible Marks"
+                  - option "BBD - Barbados Dollar"
+                  - option "BDT - Taka"
+                  - option "BEF - Belgian Franc"
+                  - option "BGL - Bulgarian Lev (Obsolete)"
+                  - option "BGN - Bulgarian Lev"
+                  - option "BHD - Bahraini Dinar"
+                  - option "BIF - Burundi Franc"
+                  - option "BMD - Bermudian Dollar"
+                  - option "BND - Brunei Dollar"
+                  - option "BOB - afa"
+                  - option "BOV - Mvdol"
+                  - option "BRC - Cruzado"
+                  - option "BRL - Brazilian Real"
+                  - option "BRL_1 - Brazilian Real_1"
+                  - option "BRL_2 - Brazilian Real_2"
+                  - option "BSD - Bahamian Dollar"
+                  - option "BSD_1 - Bahamian Dollar_1"
+                  - option "BSD_2 - Bahamian Dollar_2"
+                  - option "BTN - Ngultrum"
+                  - option "BUK - Kyat (Obsolete)"
+                  - option "BWP - Pula"
+                  - option "BYB - Belarusian Ruble (Withdrawn in 2000)"
+                  - option "BYN - Belarusian Ruble"
+                  - option "BYR - Belarusian Ruble (Withdrawn in 2016)"
+                  - option "BZD - Belize Dollar"
+                  - option "CAD - Canadian Dollar"
+                  - option "CDF - Franc Congolais"
+                  - option "CHE - WIR Euro"
+                  - option "CHF - Swiss Franc"
+                  - option "CHW - WIR Franc"
+                  - option "CLF - Unidad de Fomento"
+                  - option "CLP - Chilean Peso"
+                  - option "CNY - Yuan Renminbi"
+                  - option "COP - Colombian Peso"
+                  - option "COU - Unidad de Valor Real"
+                  - option "CRC - Costa Rican Colon"
+                  - option "CSK - Koruna"
+                  - option "CUP - Cuban Peso"
+                  - option "CVE - Cape Verde Escudo"
+                  - option "CYP - Cyprus Pound"
+                  - option "CZK - Czech Koruna"
+                  - option "DEM - Deutsche Mark"
+                  - option "DJF - Djibouti Franc"
+                  - option "DKK - Danish Krone"
+                  - option "DOP - Dominican Peso"
+                  - option "DZD - Algerian Dinar"
+                  - option "ECS - Sucre"
+                  - option "ECV - Unidad de Valor Constante (UVC)"
+                  - option "EEK - Kroon"
+                  - option "EGP - Egyptian Pound"
+                  - option "ERN - Nakfa"
+                  - option "ESB - Convertible Peseta Accounts"
+                  - option "ESP - Spanish Peseta"
+                  - option "ETB - Ethiopian Birr"
+                  - option "FIM - Markka"
+                  - option "FJD - Fiji Dollar"
+                  - option "FKP - Falkland Islands Pound"
+                  - option "FRF - French Franc"
+                  - option "GEK - Georgian Coupon"
+                  - option "GEL - Lari"
+                  - option "GFk - Gfk"
+                  - option "GHC - Ghana Cedi (old)"
+                  - option "GHS - Ghana Cedi"
+                  - option "GIP - Gibraltar Pound"
+                  - option "GMD - Dalasi"
+                  - option "GNF - Guinea Franc"
+                  - option "GRD - Drachma"
+                  - option "GTQ - Quetzal"
+                  - option "GWP - Guinea-Bissau Peso"
+                  - option "GYD - Guyana Dollar"
+                  - option "HKD - Hong Kong Dollar"
+                  - option "HNL - Lempira"
+                  - option "HRD - Croatian Dinar"
+                  - option "HRK - Croatian Kuna"
+                  - option "HTG - Gourde"
+                  - option "HUF - Forint"
+                  - option "IDR - Rupiah"
+                  - option "IEP - Irish Pound"
+                  - option "ILS - New Israeli Sheqel"
+                  - option "INR - Indian Rupee"
+                  - option "IQD - Iraqi Dinar"
+                  - option "IRR - Iranian Rial"
+                  - option "ISK - Iceland Krona"
+                  - option "ITL - Italian Lira"
+                  - option "JMD - Jamaican Dollar"
+                  - option "JOD - Jordanian Dinar"
+                  - option "KES - Kenyan Shilling"
+                  - option "KGS - Som"
+                  - option "KHR - Riel"
+                  - option "KMF - Comoro Franc"
+                  - option "KPW - North Korean Won"
+                  - option "KRW - Won"
+                  - option "KWD - Kuwaiti Dinar"
+                  - option "KYD - Cayman Islands Dollar"
+                  - option "KZT - Tenge"
+                  - option "LAK - Kip"
+                  - option "LBP - Lebanese Pound"
+                  - option "LKR - Sri Lanka Rupee"
+                  - option "LRD - Liberian Dollar"
+                  - option "LSL - Loti"
+                  - option "LTL - Lithuanian Litas"
+                  - option "LUC - Convertible Franc"
+                  - option "LUF - Luxembourg Franc"
+                  - option "LUL - Financial Franc"
+                  - option "LVL - Latvian Lats"
+                  - option "LVR - Latvian Ruble"
+                  - option "LYD - Libyan Dinar"
+                  - option "MAD - Moroccan Dirham"
+                  - option "MDL - Moldovan Leu"
+                  - option "MGA - Malagasy Ariary"
+                  - option "MGF - Malagasy Franc"
+                  - option "MKD - Denar"
+                  - option "MMK - Kyat"
+                  - option "MNT - Tugrik"
+                  - option "MOP - Pataca"
+                  - option "MRO - Ouguiya (Obsolete)"
+                  - option "MRU - Ouguiya"
+                  - option "MSK - Msk"
+                  - option "MTL - Maltese Lira"
+                  - option "MUR - Mauritius Rupee"
+                  - option "MVR - Rufiyaa"
+                  - option "MWK - Kawacha"
+                  - option "MXN - Mexican Peso"
+                  - option "MXP - Mexican Peso (Obsolete)"
+                  - option "MXV - Mexican Unidad de Inversion (UDI)"
+                  - option "MYR - Malaysian Ringgit"
+                  - option "MZM - Metical (old)"
+                  - option "MZN - Metical"
+                  - option "NAD - Namibia Dollar"
+                  - option "NGN - Naira"
+                  - option "NIC - Cordoba"
+                  - option "NIO - Cordoba Oro"
+                  - option "NLG - Netherlands Guilder"
+                  - option "NOK - Norwegian Krone"
+                  - option "NPR - Nepalese Rupee"
+                  - option "NZD - New Zealand Dollar"
+                  - option "OMR - Rial Omani"
+                  - option "PAB - Balboa"
+                  - option "PEI - Inti"
+                  - option "PEN - Nuevo Sol"
+                  - option "PGK - Kina"
+                  - option "PHP - Philippine Peso"
+                  - option "PKR - Pakistan Rupee"
+                  - option "PLN - Zloty"
+                  - option "PLZ - Zloty (Obsolete)"
+                  - option "PTE - Portuguese Escudo"
+                  - option "PYG - Guarani"
+                  - option "QAR - Qatari Rial"
+                  - option "ROL - Leu"
+                  - option "RON - New Romanian Leu"
+                  - option "RPA - RPA Currency"
+                  - option "RPA12 - RPA Currency12"
+                  - option "RSD - Serbian Dinar"
+                  - option "RUB - Russian Ruble"
+                  - option "RUR - Russian Ruble (old)"
+                  - option "RWF - Rwanda Franc"
+                  - option "SAR - Saudi Riyal"
+                  - option "SBD - Solomon Islands Dollar"
+                  - option "SCR - Seychelles Rupee"
+                  - option "SDD - Sudanese Dinar"
+                  - option "SDG - Sudanese Pound"
+                  - option "SDP - Sudanese Pound (old)"
+                  - option "SEK - Swedish Krona"
+                  - option "SGD - Singapore Dollar"
+                  - option "SHP - Saint Helena Pound"
+                  - option "SIT - Tolar"
+                  - option "SKK - Slovak Koruna"
+                  - option "SLE - New Leone"
+                  - option "SLL - Leone"
+                  - option "SOS - Somali Shilling"
+                  - option "SRD - Suriname Dollar"
+                  - option "SRG - Suriname Guilder"
+                  - option "SSP - South Sudanese Pound"
+                  - option "STD - Dobra (Obsolete)"
+                  - option "STN - Dobra"
+                  - option "SUR - Rouble"
+                  - option "SVC - El Salvador Colon"
+                  - option "SYP - Syrian Pound"
+                  - option "SZL - Lilangeni"
+                  - option "THB - Baht"
+                  - option "TJR - Tajik Ruble"
+                  - option "TJS - Somoni"
+                  - option "TMM - Manat (Obsolete)"
+                  - option "TMT - Manat"
+                  - option "TND - Tunisian Dinar"
+                  - option "TOP - Pa'anga"
+                  - option "TPE - Timor Escudo"
+                  - option "TRL - Turkish Lira"
+                  - option "TRY - New Turkish Lira"
+                  - option "TTD - Trinidad and Tobago Dollar"
+                  - option "TWD - New Taiwan Dollar"
+                  - option "TZS - Tanzanian Shilling"
+                  - option "UAH - Hryvnia"
+                  - option "UAK - Karbovanet"
+                  - option "UGS - Uganda Shilling (Obsolete)"
+                  - option "UGX - Uganda Shilling"
+                  - option "URO - Euro cts"
+                  - option "USD CTS - US Dollar cts"
+                  - option "USN - US Dollar (next day)"
+                  - option "USS - US Dollar (same day)"
+                  - option "UYI - Uruguay Peso en Unidades Indexadas"
+                  - option "UYP - Uruguayan Peso"
+                  - option "UYU - Peso Uruguayo"
+                  - option "UYW - Unidad Previsional"
+                  - option "UZS - Uzbekistan Sum"
+                  - option "VEB - Bolivar"
+                  - option "VEF - Bolivar Fuerte"
+                  - option "VES - Bolivar Soberano"
+                  - option "VND - Dong"
+                  - option "VUV - Vatu"
+                  - option "WST - Tala"
+                  - option "XAD - Arab Accounting Dinar"
+                  - option "XAF - CFA Franc BEAC"
+                  - option "XAG - Silver"
+                  - option "XAU - Gold"
+                  - option "XB5 - Bond Markets Unit European Unit of Account 17 (Obsolete)"
+                  - option "XBA - Bond Markets Unit European Composite Unit (EURCO)"
+                  - option "XBB - Bond Markets Unit European Monetary Unit (E.M.U.-6)"
+                  - option "XBC - Bond Markets Unit European Unit of Account 9 (E.U.A.-9)"
+                  - option "XBD - Bond Markets Unit European Unit of Account 17 (E.U.A.-17)"
+                  - option "XCD - East Caribbean Dollar"
+                  - option "XCG - Caribbean Guilder"
+                  - option "XDR - SDR"
+                  - option "XEU - European Currency Unit (E.C.U.)"
+                  - option "XFO - Special settlement currencies - Gold-Franc"
+                  - option "XFU - UIC Franc (special settlement currency)"
+                  - option "XOF - CFA Franc BCEAO"
+                  - option "XPD - Palladium"
+                  - option "XPF - CFP Franc"
+                  - option "XPT - Platinum"
+                  - option "XTS - Testing"
+                  - option "XXX - No currency"
+                  - option "YDD - Yemeni Dinar"
+                  - option "YER - Yemeni Rial"
+                  - option "YUD - New Yugoslavian Dinar"
+                  - option "YUM - Yugoslavian Dinar"
+                  - option "YUN - Yugoslavian Dinar (Obsolete)"
+                  - option "ZAL - Financial Rand"
+                  - option "ZAR - Rand"
+                  - option "ZIG - Zimbabwe Gold"
+                  - option "ZMK - Zambian Kwacha (Obsolete)"
+                  - option "ZMW - Zambian Kwacha"
+                  - option "ZRN - New Zaire"
+                  - option "ZRZ - Zaire"
+                  - option "ZWD - Zimbabwe Dollar (Obsolete Much Earlier)"
+                  - option "ZWL - Zimbabwe Dollar"
+                  - option "ZWR - Zimbabwe Dollar (Obsolete)"
+                - generic: Invoice Currency
+              - generic [ref=e252]:
+                - textbox "Amount" [ref=e253]: "100.00"
+                - generic: Amount
+              - text: "*Type"
+              - combobox "Type" [ref=e254]:
+                - option "Standard" [selected]
+                - option "Prepayment"
+                - option "Debit memo"
+                - option "Credit memo"
+              - text: Description
+              - textbox "Description" [ref=e255]
+              - text: "*Date"
+              - textbox "Date" [ref=e256]:
+                - /placeholder: mm/dd/yyyy
+                - text: 12/03/2025
+              - generic: Press down arrow to access Calendar
+              - generic "Select Date" [ref=e257]
+              - generic [ref=e258]: "*"
+              - text: Payment Terms
+              - generic [ref=e259]:
+                - combobox "Payment Terms" [ref=e260]: Immediate
+                - 'generic "Search: Payment Terms" [ref=e263]'
+                - generic: Autocompletes on TAB
+              - text: "*Terms Date"
+              - textbox "Terms Date" [ref=e264]:
+                - /placeholder: mm/dd/yyyy
+                - text: 12/03/2025
+              - generic: Press down arrow to access Calendar
+              - generic "Select Date" [ref=e265]
+              - text: Requester
+              - combobox "Requester" [ref=e266]
+              - 'link "Search: Requester" [ref=e267] [cursor=pointer]':
+                - /url: "#"
+              - generic: Tab to the associated search button or type a value. Autocompletes on TAB
+              - text: Attachments
+              - generic [ref=e269]:
+                - text: None
+                - link "Manage Attachments" [ref=e270] [cursor=pointer]:
+                  - /url: "#"
+                  - img "Manage Attachments" [ref=e271]
+              - text: Note
+              - link "Create Note" [ref=e272] [cursor=pointer]:
+                - /url: "#"
+                - img "Create Note" [ref=e273]
+          - generic [ref=e274]:
+            - generic [ref=e275]:
+              - button "Collapse Lines" [expanded] [ref=e276]
+              - generic "Lines" [ref=e277]:
+                - heading "Lines" [level=1] [ref=e278]
+              - link "Help" [ref=e279] [cursor=pointer]:
+                - /url: "#"
+                - img "Help" [ref=e280]
+              - generic [ref=e293]:
+                - combobox "Action" [ref=e294]:
+                  - option "Match Invoice Lines" [selected]
+                  - option "Match to Receipt Charges"
+                  - option "Correct Matched Invoices"
+                  - option "Correct Unmatched Invoices"
+                - generic: Action
+              - link "Go" [ref=e297] [cursor=pointer]:
+                - /url: "#"
+                - img "Go" [ref=e298]
+            - generic [ref=e301]:
+              - generic [ref=e304]:
+                - menubar [ref=e305]:
+                  - menuitem "View" [ref=e306]:
+                    - link "View" [ref=e307]:
+                      - /url: "#"
+                - generic [ref=e309]:
+                  - button "Add Row" [ref=e310]:
+                    - img "Add Row" [ref=e311]
+                  - generic: Add Row
+                  - button "Duplicate" [ref=e312]:
+                    - img "Duplicate" [ref=e313]
+                  - generic: Duplicate
+                  - button "Delete" [ref=e314]:
+                    - img "Delete" [ref=e315]
+                  - generic: Delete
+                  - button "Export to Excel" [ref=e316]:
+                    - img "Export to Excel" [ref=e317]
+                  - generic: Export to Excel
+                - generic [ref=e318]:
+                  - button "Query By Example" [ref=e319]:
+                    - img "Query By Example" [ref=e320]
+                  - generic: Query By Example
+                  - button "Detach" [ref=e321]:
+                    - generic [ref=e322]: Detach
+                  - generic: Detach
+                - generic [ref=e323]:
+                  - toolbar [ref=e324]:
+                    - button "Allocate" [ref=e325]:
+                      - generic [ref=e326]: Allocate
+                  - generic "Allocate" [ref=e328]
+                  - generic: Button has a popup, press down arrow key to access the popup.
+                  - button "Cancel Line" [ref=e329]:
+                    - generic [ref=e330]: Cancel Line
+                  - button "Distributions" [ref=e331]:
+                    - generic [ref=e332]: Distributions
+                - generic [ref=e334]:
+                  - link "Distribution" [ref=e335] [cursor=pointer]:
+                    - /url: "#"
+                  - link "Reference" [ref=e337] [cursor=pointer]:
+                    - /url: "#"
+                  - link "Tax" [ref=e339] [cursor=pointer]:
+                    - /url: "#"
+                  - link "Purchase Order" [ref=e341] [cursor=pointer]:
+                    - /url: "#"
+                  - link "Asset" [ref=e343] [cursor=pointer]:
+                    - /url: "#"
+                  - link "Project" [ref=e345] [cursor=pointer]:
+                    - /url: "#"
+              - generic [ref=e347]:
+                - generic [ref=e348]:
+                  - table "This table contains column headers corresponding to the data body table below" [ref=e349]:
+                    - rowgroup [ref=e355]:
+                      - row:
+                        - cell
+                        - cell
+                        - cell
+                        - cell
+                      - row "*Number *Type *Amount" [ref=e356]:
+                        - cell [ref=e357]
+                        - cell "*Number" [ref=e359]:
+                          - generic [ref=e360]: "*Number"
+                        - cell "*Type" [ref=e361]:
+                          - generic [ref=e362]: "*Type"
+                        - cell "*Amount" [ref=e363]:
+                          - generic [ref=e364]: "*Amount"
+                      - row [ref=e365]
+                  - table "This table contains column headers corresponding to the data body table below" [ref=e367]:
+                    - rowgroup [ref=e386]:
+                      - row:
+                        - cell
+                        - cell
+                        - cell
+                        - cell
+                        - cell
+                        - cell
+                        - cell
+                        - cell
+                        - cell
+                        - cell
+                        - cell
+                        - cell
+                        - cell
+                        - cell
+                        - cell
+                        - cell
+                        - cell
+                      - row "Distribution Reference Tax Purchase Order Asset Project Details" [ref=e387]:
+                        - cell "Distribution" [ref=e388]:
+                          - generic [ref=e389]: Distribution
+                        - cell "Reference" [ref=e390]:
+                          - generic [ref=e391]: Reference
+                        - cell "Tax" [ref=e392]:
+                          - generic [ref=e393]: Tax
+                        - cell "Purchase Order" [ref=e394]:
+                          - generic [ref=e395]: Purchase Order
+                        - cell "Asset" [ref=e396]:
+                          - generic [ref=e397]: Asset
+                        - cell "Project" [ref=e398]:
+                          - generic [ref=e399]: Project
+                        - cell "Details" [ref=e400]:
+                          - generic [ref=e401]: Details
+                      - row "Distribution Set Distribution Combination Accounting Date Prorate Across All Item Lines Description Tax Classification Ship-to Location Number Line Schedule Track as Asset Project Number Task Number Expenditure Item Date Expenditure Type Expenditure Organization" [ref=e402]:
+                        - cell "Distribution Set" [ref=e403]:
+                          - generic [ref=e404]: Distribution Set
+                        - cell "Distribution Combination" [ref=e405]:
+                          - generic [ref=e406]: Distribution Combination
+                        - cell "Accounting Date" [ref=e407]:
+                          - generic [ref=e408]: Accounting Date
+                        - cell "Prorate Across All Item Lines" [ref=e409]:
+                          - generic [ref=e410]: Prorate Across All Item Lines
+                        - cell "Description" [ref=e411]:
+                          - generic [ref=e412]: Description
+                        - cell "Tax Classification" [ref=e413]:
+                          - generic [ref=e414]: Tax Classification
+                        - cell "Ship-to Location" [ref=e415]:
+                          - generic [ref=e416]: Ship-to Location
+                        - cell "Number" [ref=e417]:
+                          - generic [ref=e418]: Number
+                        - cell "Line" [ref=e419]:
+                          - generic [ref=e420]: Line
+                        - cell "Schedule" [ref=e421]:
+                          - generic [ref=e422]: Schedule
+                        - cell "Track as Asset" [ref=e423]:
+                          - generic [ref=e424]: Track as Asset
+                        - cell "Project Number" [ref=e425]:
+                          - generic [ref=e426]: Project Number
+                        - cell "Task Number" [ref=e427]:
+                          - generic [ref=e428]: Task Number
+                        - cell "Expenditure Item Date" [ref=e429]:
+                          - generic [ref=e430]: Expenditure Item Date
+                        - cell "Expenditure Type" [ref=e431]:
+                          - generic [ref=e432]: Expenditure Type
+                        - cell "Expenditure Organization" [ref=e433]:
+                          - generic [ref=e434]: Expenditure Organization
+                - table "Invoice Lines" [ref=e436]:
+                  - rowgroup [ref=e443]:
+                    - 'row "1 Item Type 100.00 Amount Office Supplies Distribution Set Search: Distribution Set Autocompletes on TAB Distribution Combination ID Select: Distribution Combination ID 12/03/2025 Press down arrow to access Calendar Accounting Date Select Date Description Tax Classification Search: Tax Classification Autocompletes on TAB Ship-to Location Search: Ship-to Location Autocompletes on TAB Number Search: Number Autocompletes on TAB Line Search: Line Autocompletes on TAB Schedule Search: Schedule Autocompletes on TAB Project Number Search: Project Number Tab to the associated search button or type a value. Autocompletes on TAB 12/03/2025 Details" [ref=e444]':
+                      - cell [ref=e445]
+                      - cell "1" [ref=e446]:
+                        - generic [ref=e447]: "1"
+                      - cell "Item Type" [ref=e448]:
+                        - generic [ref=e450]:
+                          - combobox "Type" [ref=e451]:
+                            - option "Freight"
+                            - option "Item" [selected]
+                            - option "Miscellaneous"
+                          - generic: Type
+                      - cell "100.00 Amount" [ref=e452]:
+                        - generic [ref=e454]:
+                          - textbox "Amount" [ref=e455]: "100.00"
+                          - generic: Amount
+                      - 'cell "Office Supplies Distribution Set Search: Distribution Set Autocompletes on TAB Distribution Combination ID Select: Distribution Combination ID 12/03/2025 Press down arrow to access Calendar Accounting Date Select Date Description Tax Classification Search: Tax Classification Autocompletes on TAB Ship-to Location Search: Ship-to Location Autocompletes on TAB Number Search: Number Autocompletes on TAB Line Search: Line Autocompletes on TAB Schedule Search: Schedule Autocompletes on TAB Project Number Search: Project Number Tab to the associated search button or type a value. Autocompletes on TAB 12/03/2025 Details" [ref=e456]':
+                        - table [ref=e458]:
+                          - rowgroup [ref=e477]:
+                            - 'row "Office Supplies Distribution Set Search: Distribution Set Autocompletes on TAB Distribution Combination ID Select: Distribution Combination ID 12/03/2025 Press down arrow to access Calendar Accounting Date Select Date Description Tax Classification Search: Tax Classification Autocompletes on TAB Ship-to Location Search: Ship-to Location Autocompletes on TAB Number Search: Number Autocompletes on TAB Line Search: Line Autocompletes on TAB Schedule Search: Schedule Autocompletes on TAB Project Number Search: Project Number Tab to the associated search button or type a value. Autocompletes on TAB 12/03/2025 Details" [ref=e478]':
+                              - 'cell "Office Supplies Distribution Set Search: Distribution Set Autocompletes on TAB" [ref=e479]':
+                                - generic [ref=e482]:
+                                  - combobox "Distribution Set" [ref=e483]: Office Supplies
+                                  - generic: Distribution Set
+                                  - 'generic "Search: Distribution Set" [ref=e486]'
+                                  - generic: Autocompletes on TAB
+                              - 'cell "Distribution Combination ID Select: Distribution Combination ID" [ref=e487]':
+                                - generic [ref=e490]:
+                                  - generic [ref=e491]:
+                                    - textbox "Distribution Combination ID" [disabled] [ref=e492]
+                                    - generic: Distribution Combination ID
+                                  - 'generic "Select: Distribution Combination ID" [ref=e493]':
+                                    - 'img "Select: Distribution Combination ID" [ref=e494]'
+                              - cell "12/03/2025 Press down arrow to access Calendar Accounting Date Select Date" [ref=e495]:
+                                - generic [ref=e497]:
+                                  - textbox "Accounting Date" [ref=e498]:
+                                    - /placeholder: mm/dd/yyyy
+                                    - text: 12/03/2025
+                                  - generic: Press down arrow to access Calendar
+                                  - generic: Accounting Date
+                                  - generic "Select Date" [ref=e499]
+                              - cell [ref=e500]:
+                                - checkbox [disabled] [ref=e505]
+                              - cell "Description" [ref=e507]:
+                                - generic [ref=e509]:
+                                  - textbox "Description" [ref=e510]
+                                  - generic: Description
+                              - 'cell "Tax Classification Search: Tax Classification Autocompletes on TAB" [ref=e511]':
+                                - generic [ref=e514]:
+                                  - combobox "Tax Classification" [ref=e515]
+                                  - generic: Tax Classification
+                                  - 'generic "Search: Tax Classification" [ref=e518]'
+                                  - generic: Autocompletes on TAB
+                              - 'cell "Ship-to Location Search: Ship-to Location Autocompletes on TAB" [ref=e519]':
+                                - generic [ref=e522]:
+                                  - combobox "Ship-to Location" [ref=e523]
+                                  - generic: Ship-to Location
+                                  - 'generic "Search: Ship-to Location" [ref=e526]'
+                                  - generic: Autocompletes on TAB
+                              - 'cell "Number Search: Number Autocompletes on TAB" [ref=e527]':
+                                - generic [ref=e530]:
+                                  - combobox "Number" [disabled] [ref=e531]
+                                  - generic: Number
+                                  - 'generic "Search: Number" [ref=e534]'
+                                  - generic: Autocompletes on TAB
+                              - 'cell "Line Search: Line Autocompletes on TAB" [ref=e535]':
+                                - generic [ref=e538]:
+                                  - combobox "Line" [disabled] [ref=e539]
+                                  - generic: Line
+                                  - 'generic "Search: Line" [ref=e542]'
+                                  - generic: Autocompletes on TAB
+                              - 'cell "Schedule Search: Schedule Autocompletes on TAB" [ref=e543]':
+                                - generic [ref=e546]:
+                                  - combobox "Schedule" [disabled] [ref=e547]
+                                  - generic: Schedule
+                                  - 'generic "Search: Schedule" [ref=e550]'
+                                  - generic: Autocompletes on TAB
+                              - cell [ref=e551]:
+                                - checkbox [ref=e556]
+                              - 'cell "Project Number Search: Project Number Tab to the associated search button or type a value. Autocompletes on TAB" [ref=e558]':
+                                - generic [ref=e560]:
+                                  - combobox "Project Number" [ref=e561]
+                                  - generic: Project Number
+                                  - 'link "Search: Project Number" [ref=e562] [cursor=pointer]':
+                                    - /url: "#"
+                                  - generic: Tab to the associated search button or type a value. Autocompletes on TAB
+                              - cell [ref=e563]
+                              - cell "12/03/2025" [ref=e565]:
+                                - generic [ref=e567]: 12/03/2025
+                              - cell [ref=e568]
+                              - cell [ref=e570]
+                              - cell "Details" [ref=e572]:
+                                - link "Details" [ref=e574] [cursor=pointer]:
+                                  - /url: "#"
+                                  - img "Details" [ref=e575]
+                    - row "2 Item 12/03/2025 unchecked ProrateDsp AssetsTrackingFlagDsp 12/03/2025 Details" [ref=e576]:
+                      - cell [ref=e577]
+                      - cell "2" [ref=e578]:
+                        - generic [ref=e579]: "2"
+                      - cell "Item" [ref=e580]:
+                        - generic [ref=e582]: Item
+                      - cell [ref=e583]
+                      - cell "12/03/2025 unchecked ProrateDsp AssetsTrackingFlagDsp 12/03/2025 Details" [ref=e584]:
+                        - table [ref=e586]:
+                          - rowgroup [ref=e605]:
+                            - row "12/03/2025 unchecked ProrateDsp AssetsTrackingFlagDsp 12/03/2025 Details" [ref=e606]:
+                              - cell [ref=e607]:
+                                - generic [ref=e608]:
+                                  - generic:
+                                    - combobox
+                              - cell [ref=e609]
+                              - cell "12/03/2025" [ref=e613]:
+                                - generic [ref=e615]: 12/03/2025
+                              - cell "unchecked ProrateDsp" [ref=e616]:
+                                - generic [ref=e618]:
+                                  - img "unchecked" [ref=e621]
+                                  - generic: ProrateDsp
+                              - cell [ref=e622]
+                              - cell [ref=e623]:
+                                - generic [ref=e624]:
+                                  - generic:
+                                    - combobox
+                              - cell [ref=e625]:
+                                - generic [ref=e626]:
+                                  - generic:
+                                    - combobox
+                              - cell [ref=e627]:
+                                - generic [ref=e628]:
+                                  - generic:
+                                    - combobox
+                              - cell [ref=e629]:
+                                - generic [ref=e630]:
+                                  - generic:
+                                    - combobox
+                              - cell [ref=e631]:
+                                - generic [ref=e632]:
+                                  - generic:
+                                    - combobox
+                              - cell "AssetsTrackingFlagDsp" [ref=e633]:
+                                - generic [ref=e635]:
+                                  - generic "AssetsTrackingFlagDsp" [ref=e636]:
+                                    - img "unchecked" [ref=e638]
+                                  - generic: AssetsTrackingFlagDsp
+                              - cell [ref=e639]
+                              - cell [ref=e641]
+                              - cell "12/03/2025" [ref=e643]:
+                                - generic [ref=e645]: 12/03/2025
+                              - cell [ref=e646]
+                              - cell [ref=e648]
+                              - cell "Details" [ref=e650]:
+                                - link "Details" [ref=e652] [cursor=pointer]:
+                                  - /url: "#"
+                                  - img "Details" [ref=e653]
+                    - row "3 Item 12/03/2025 unchecked ProrateDsp AssetsTrackingFlagDsp 12/03/2025 Details" [ref=e654]:
+                      - cell [ref=e655]
+                      - cell "3" [ref=e656]:
+                        - generic [ref=e657]: "3"
+                      - cell "Item" [ref=e658]:
+                        - generic [ref=e660]: Item
+                      - cell [ref=e661]
+                      - cell "12/03/2025 unchecked ProrateDsp AssetsTrackingFlagDsp 12/03/2025 Details" [ref=e662]:
+                        - table [ref=e664]:
+                          - rowgroup [ref=e683]:
+                            - row "12/03/2025 unchecked ProrateDsp AssetsTrackingFlagDsp 12/03/2025 Details" [ref=e684]:
+                              - cell [ref=e685]:
+                                - generic [ref=e686]:
+                                  - generic:
+                                    - combobox
+                              - cell [ref=e687]
+                              - cell "12/03/2025" [ref=e691]:
+                                - generic [ref=e693]: 12/03/2025
+                              - cell "unchecked ProrateDsp" [ref=e694]:
+                                - generic [ref=e696]:
+                                  - img "unchecked" [ref=e699]
+                                  - generic: ProrateDsp
+                              - cell [ref=e700]
+                              - cell [ref=e701]:
+                                - generic [ref=e702]:
+                                  - generic:
+                                    - combobox
+                              - cell [ref=e703]:
+                                - generic [ref=e704]:
+                                  - generic:
+                                    - combobox
+                              - cell [ref=e705]:
+                                - generic [ref=e706]:
+                                  - generic:
+                                    - combobox
+                              - cell [ref=e707]:
+                                - generic [ref=e708]:
+                                  - generic:
+                                    - combobox
+                              - cell [ref=e709]:
+                                - generic [ref=e710]:
+                                  - generic:
+                                    - combobox
+                              - cell "AssetsTrackingFlagDsp" [ref=e711]:
+                                - generic [ref=e713]:
+                                  - generic "AssetsTrackingFlagDsp" [ref=e714]:
+                                    - img "unchecked" [ref=e716]
+                                  - generic: AssetsTrackingFlagDsp
+                              - cell [ref=e717]
+                              - cell [ref=e719]
+                              - cell "12/03/2025" [ref=e721]:
+                                - generic [ref=e723]: 12/03/2025
+                              - cell [ref=e724]
+                              - cell [ref=e726]
+                              - cell "Details" [ref=e728]:
+                                - link "Details" [ref=e730] [cursor=pointer]:
+                                  - /url: "#"
+                                  - img "Details" [ref=e731]
+                    - row "4 Item 12/03/2025 unchecked ProrateDsp AssetsTrackingFlagDsp 12/03/2025 Details" [ref=e732]:
+                      - cell [ref=e733]
+                      - cell "4" [ref=e734]:
+                        - generic [ref=e735]: "4"
+                      - cell "Item" [ref=e736]:
+                        - generic [ref=e738]: Item
+                      - cell [ref=e739]
+                      - cell "12/03/2025 unchecked ProrateDsp AssetsTrackingFlagDsp 12/03/2025 Details" [ref=e740]:
+                        - table [ref=e742]:
+                          - rowgroup [ref=e761]:
+                            - row "12/03/2025 unchecked ProrateDsp AssetsTrackingFlagDsp 12/03/2025 Details" [ref=e762]:
+                              - cell [ref=e763]:
+                                - generic [ref=e764]:
+                                  - generic:
+                                    - combobox
+                              - cell [ref=e765]
+                              - cell "12/03/2025" [ref=e769]:
+                                - generic [ref=e771]: 12/03/2025
+                              - cell "unchecked ProrateDsp" [ref=e772]:
+                                - generic [ref=e774]:
+                                  - img "unchecked" [ref=e777]
+                                  - generic: ProrateDsp
+                              - cell [ref=e778]
+                              - cell [ref=e779]:
+                                - generic [ref=e780]:
+                                  - generic:
+                                    - combobox
+                              - cell [ref=e781]:
+                                - generic [ref=e782]:
+                                  - generic:
+                                    - combobox
+                              - cell [ref=e783]:
+                                - generic [ref=e784]:
+                                  - generic:
+                                    - combobox
+                              - cell [ref=e785]:
+                                - generic [ref=e786]:
+                                  - generic:
+                                    - combobox
+                              - cell [ref=e787]:
+                                - generic [ref=e788]:
+                                  - generic:
+                                    - combobox
+                              - cell "AssetsTrackingFlagDsp" [ref=e789]:
+                                - generic [ref=e791]:
+                                  - generic "AssetsTrackingFlagDsp" [ref=e792]:
+                                    - img "unchecked" [ref=e794]
+                                  - generic: AssetsTrackingFlagDsp
+                              - cell [ref=e795]
+                              - cell [ref=e797]
+                              - cell "12/03/2025" [ref=e799]:
+                                - generic [ref=e801]: 12/03/2025
+                              - cell [ref=e802]
+                              - cell [ref=e804]
+                              - cell "Details" [ref=e806]:
+                                - link "Details" [ref=e808] [cursor=pointer]:
+                                  - /url: "#"
+                                  - img "Details" [ref=e809]
+                    - row "5 Item 12/03/2025 unchecked ProrateDsp AssetsTrackingFlagDsp 12/03/2025 Details" [ref=e810]:
+                      - cell [ref=e811]
+                      - cell "5" [ref=e812]:
+                        - generic [ref=e813]: "5"
+                      - cell "Item" [ref=e814]:
+                        - generic [ref=e816]: Item
+                      - cell [ref=e817]
+                      - cell "12/03/2025 unchecked ProrateDsp AssetsTrackingFlagDsp 12/03/2025 Details" [ref=e818]:
+                        - table [ref=e820]:
+                          - rowgroup [ref=e839]:
+                            - row "12/03/2025 unchecked ProrateDsp AssetsTrackingFlagDsp 12/03/2025 Details" [ref=e840]:
+                              - cell [ref=e841]:
+                                - generic [ref=e842]:
+                                  - generic:
+                                    - combobox
+                              - cell [ref=e843]
+                              - cell "12/03/2025" [ref=e847]:
+                                - generic [ref=e849]: 12/03/2025
+                              - cell "unchecked ProrateDsp" [ref=e850]:
+                                - generic [ref=e852]:
+                                  - img "unchecked" [ref=e855]
+                                  - generic: ProrateDsp
+                              - cell [ref=e856]
+                              - cell [ref=e857]:
+                                - generic [ref=e858]:
+                                  - generic:
+                                    - combobox
+                              - cell [ref=e859]:
+                                - generic [ref=e860]:
+                                  - generic:
+                                    - combobox
+                              - cell [ref=e861]:
+                                - generic [ref=e862]:
+                                  - generic:
+                                    - combobox
+                              - cell [ref=e863]:
+                                - generic [ref=e864]:
+                                  - generic:
+                                    - combobox
+                              - cell [ref=e865]:
+                                - generic [ref=e866]:
+                                  - generic:
+                                    - combobox
+                              - cell "AssetsTrackingFlagDsp" [ref=e867]:
+                                - generic [ref=e869]:
+                                  - generic "AssetsTrackingFlagDsp" [ref=e870]:
+                                    - img "unchecked" [ref=e872]
+                                  - generic: AssetsTrackingFlagDsp
+                              - cell [ref=e873]
+                              - cell [ref=e875]
+                              - cell "12/03/2025" [ref=e877]:
+                                - generic [ref=e879]: 12/03/2025
+                              - cell [ref=e880]
+                              - cell [ref=e882]
+                              - cell "Details" [ref=e884]:
+                                - link "Details" [ref=e886] [cursor=pointer]:
+                                  - /url: "#"
+                                  - img "Details" [ref=e887]
+          - generic [ref=e890]:
+            - button "Expand Taxes" [ref=e891]
+            - generic "Taxes" [ref=e892]:
+              - heading "Taxes" [level=1] [ref=e893]
+            - link "Refresh Data" [ref=e894] [cursor=pointer]:
+              - /url: "#"
+              - img "Refresh Data" [ref=e895]
+          - generic [ref=e896]:
+            - generic [ref=e897]:
+              - button "Collapse Totals" [expanded] [ref=e898]
+              - generic "Totals" [ref=e899]:
+                - heading "Totals" [level=1] [ref=e900]
+            - generic [ref=e903]:
+              - generic [ref=e904]:
+                - generic [ref=e905]: Items
+                - generic [ref=e906]: "100.00"
+              - generic [ref=e907]:
+                - generic [ref=e908]: Freight
+                - generic [ref=e909]: "0.00"
+              - generic [ref=e910]:
+                - generic [ref=e911]: Miscellaneous
+                - generic [ref=e912]: "0.00"
+                - generic [ref=e913]: Retainage
+                - generic [ref=e914]: "0.00"
+              - generic [ref=e915]:
+                - generic [ref=e916]: Tax
+                - generic [ref=e917]: "0.00"
+                - generic [ref=e918]: Withholding
+                - generic [ref=e919]: "0.00"
+              - generic [ref=e920]:
+                - generic [ref=e921]: Included Prepayments
+                - generic [ref=e922]: "0.00"
+                - generic [ref=e923]: Applied Prepayments
+                - generic [ref=e924]: "0.00"
+              - generic [ref=e925]:
+                - generic [ref=e926]: Total
+                - generic [ref=e927]:
+                  - img "In Balance" [ref=e928]
+                  - text: "100.00"
+                - generic [ref=e929]: Due
+                - generic [ref=e930]: "100.00"
+```

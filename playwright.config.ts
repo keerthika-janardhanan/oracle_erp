@@ -17,6 +17,7 @@ export default defineConfig({
   timeout: 180000,
   expect: { timeout: 180000 }, // <-- add this
   testDir: './tests',
+  outputDir: `test-results/${process.env.REFERENCE_ID || 'default'}`,
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -44,7 +45,7 @@ export default defineConfig({
       //  baseURL: 'https://fa-esfe-dev19-saasfademo1.ds-fa.oraclepdemos.com',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on',//'on-first-retry',
+    trace: 'retain-on-failure',
     screenshot: 'only-on-failure',
     navigationTimeout: 180000,
     actionTimeout: 180000
